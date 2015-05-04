@@ -1,0 +1,36 @@
+body{
+	background-color : #EAFCBB;
+}
+
+.contentscontainer{
+	background-color: #FAAC58;
+	width: 1050px;
+	border: 5px solid black;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow : 10px 5px 5px #888888;
+}
+
+.contents{
+	background-color : #EAFCBB;
+	width: 1020px;
+	border: 5px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size : 20px; 
+}
+.contents>p{
+	margin: 20px;
+	text-wrap: normal;
+	line-height: 1.5em;
+}
+#mypic{
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px solid black;
+}

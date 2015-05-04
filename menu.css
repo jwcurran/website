@@ -1,0 +1,59 @@
+#menu{
+	background-color: #FAAC58;
+	width: 1050px;
+	height: 60px;
+	border: 5px solid black;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow : 10px 5px 5px #888888;
+}
+.menubutton{
+	height: 40px;
+	width: 200px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+	font-size : 26px;
+	/*text-shadow : 2px 2px #888888;*/
+	border-left : 2px solid black;
+	border-right : 2px solid black;
+	color: black;
+}
+#underline{
+	position: absolute;
+	background-color: black;
+	box-shadow : 10px 5px 5px #888888;
+}
+#current{
+	background-color : #DF7401;
+	font-weight : bold;
+}
+#menutable{
+	margin-top : 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.submenu{
+	width: 200px;
+	text-align: center;
+	border : 2px solid black;
+	background-color: #FAAC58;
+	position: absolute;
+	z-index:  1;
+}
+.submenubutton{
+	color: black;
+}
+
+.submenu li{
+	border: 1px solid black;
+}
+
+.submenu a{
+	text-decoration: none;
+}
+
+
+
+

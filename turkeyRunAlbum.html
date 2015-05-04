@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+<title>John Curran - Turkey Run</title>
+<link type="text/css" rel="stylesheet" href="reset.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+<link type="text/css" rel="stylesheet" href="menu.css">
+<link type="text/css" rel="stylesheet" href="navbox.css">
+<link rel="shortcut icon" href="smallIcon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="menu.js"></script>
+<script>
+$(document).ready(function(){
+	$('.largeImage').hide();
+	var height = 0;
+	var width = 0;
+	$(".navboxcontent").stop().click(function(){
+		//Much more complicated than a simple .show("slow"), but the div comes into view much smoother
+		height = $(this).children(".largeImage").css('height');
+		width = $(this).children(".largeImage").css('width');
+		$(this).children(".largeImage").stop().show().css({
+			'width' : '0px',
+			'height' : '0px',
+		});
+		$(this).children(".largeImage").stop().animate(
+			{
+				'width' : width,
+				'height' : height,
+				'z-index' : 100
+			},
+			500
+		);
+	});
+	$(".navboxcontent").mouseleave(function(){
+		$(this).children(".largeImage").css('height',height);
+		$(this).children(".largeImage").css('width',width);
+		$(this).children(".largeImage").stop().hide("slow");
+	});
+});
+</script>
+</head>
+<body>
+<div id="menu">
+	
+</div>
+<div class="contentscontainer">
+	<div class="contents">
+		<table>
+			<tr>
+				<td>
+					<div class="navbox">
+						<div class="navboxcontent">
+							<div class="smallImage" ><img src="TurkeyRunBridge-small.jpg"></div>
+							<div class="largeImage"><img src="TurkeyRunBridge.jpg"></div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>John Curran - Pong</title>
+<link type="text/css" rel="stylesheet" href="reset.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+<link type="text/css" rel="stylesheet" href="menu.css">
+<link type="text/css" rel="stylesheet" href="pong.css">
+<link rel="shortcut icon" href="smallIcon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="menu.js"></script>
+<script src="pong.js"></script>
+<script>
+//Would be nice to develop a function that recursively sets menu buttons to current.
+$(window).load(function(){
+	$('.menubutton').each(function(){
+		if($(this).html().indexOf("Portfolio") > -1){
+			$(this).attr("id", "current");
+			$(this).parent().removeAttr("href");
+		}
+	});
+	$('.submenubutton').each(function(){
+		if($(this).html().indexOf("JavaScript Pong") > -1){
+			$(this).attr("id", "current");
+			$(this).parent().removeAttr("href");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="menu">
+	
+</div>
+<div class="contentscontainer">
+	<div id="table">
+		<div class="paddle" id="userPaddle"></div>
+		<div class="paddle" id="aiPaddle"></div>
+		<div id="ball"></div>
+		<div id="score"></div>
+	</div>
+</div>
+</body>
+</html>

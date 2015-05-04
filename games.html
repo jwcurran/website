@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>John Curran - Games</title>
+<link type="text/css" rel="stylesheet" href="reset.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+<link type="text/css" rel="stylesheet" href="menu.css">
+<link type="text/css" rel="stylesheet" href="navbox.css">
+<link rel="shortcut icon" href="smallIcon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="menu.js"></script>
+<script>
+//Would be nice to develop a function that recursively sets menu buttons to current.
+$(window).load(function(){
+	$('.menubutton').each(function(){
+		if($(this).html().indexOf("Portfolio") > -1){
+			$(this).attr("id", "current");
+		}
+	});
+	$('.submenubutton').each(function(){
+		if($(this).html().indexOf("Games") > -1){
+			$(this).attr("id", "current");
+			$(this).parent().removeAttr("href");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="menu">
+</div>
+<div class="contentscontainer">
+	<div class="contents">
+		<table>
+			<tr>
+				<td>
+					<div class="navbox">
+						<div class="navboxtitle">JavaScript Pong</div>
+						<div class="navboxcontent">
+							<ul>
+								<a href="pong.html"><li>Play</li></a>
+								<a href="pong.js" target=="_blank"><li>Code</li></a>
+								<a><li>Blog</li></a>
+							</ul>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+</body>
+</html>
