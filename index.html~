@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>John Curran - About Me</title>
+<link type="text/css" rel="stylesheet" href="reset.css">
+<link type="text/css" rel="stylesheet" href="main.css">
+<link type="text/css" rel="stylesheet" href="menu.css">
+<link rel="shortcut icon" href="smallIcon.ico">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="menu.js"></script>
+<script>
+//Would be nice to develop a function that recursively sets menu buttons to current.
+$(window).load(function(){
+	$('.menubutton').each(function(){
+		if($(this).html().indexOf("About Me") > -1){
+			$(this).attr("id", "current");
+			$(this).parent().removeAttr("href");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="menu">
+	
+</div>
+<div class="contentscontainer">
+	<div class="contents">
+		<img id="mypic" src="269688e.jpg">
+		<p>Hi! My name is John Curran. Welcome to version one of my personal website. I am creating this website primarily out of a want to learn more about web programming. 
+		I have a lot of great ideas that I will continually implement as I have time. I would also like to post some projects, both complete and in progress as a kind of showcase. 
+		I currently work full time in the software industry, however, so my spare time is far from infinite.
+		<p>I was born and raised in Indiana and still currently live in the state. I grew up on the far north side of Indianapolis, about 30 miles from Downtown Indy. 
+		I completed all of my schooling in the Indianapolis area, where I attended Catholic Schools for middle school and high school. After high school, I went on to graduate with distinction from the Purdue School of Engineering and Technology at IUPUI. I hold a Bachelor's Degree in computer engineering with minors in mathematics and computer science. 
+		I was an award winning student in my senior year, earning awards 
+		for my academic performance and my senior design project. I have always had a passion for technology. 
+		A perfect illustration of this fact is when I tried to give the new family dog the name of "Computer" when I was about 5 years old.</p>
+		<p>Outside of being an aspiring computer genius, I played football through grade school and high school, achieved the rank of Eagle Scout in the Boy Scouts of America, 
+		went fishing on any body of water that I could get to, took apart, fixed, and rebuild everything with an engine, and learned everything I could along the way. I consider myself a true Jack of all trades. 
+		If I don't know enough to immediately jump right into something, I usually know enough to at least hold a conversation and pick up the missing material very quickly from those more knowledgeable than myself. 
+		</p>
+	</div>
+</div>
+</body>
+</html>

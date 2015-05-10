@@ -1,7 +1,7 @@
 $(window).load(function(){
 	$('#menu').html('<table id="menutable">\
 		<tr>\
-			<td><a href="index.html"><div class="menubutton">About Me</div></td>\
+			<td><a href="index.html"><div class="menubutton">About Me</div></a></td>\
 			<td><a href="JohnCurranWebResume_2-10-15.pdf" target=="_blank"><div class="menubutton">Resume</div></a></td>\
 			<td>\
 				<div class="menubutton">\
@@ -22,7 +22,7 @@ $(window).load(function(){
 					</div>\
 				</div>\
 			</td>\
-			<td><div class="menubutton">Blog</div></td>\
+			<td><a href="blog.html"><div class="menubutton">Blog</div></a></td>\
 			<td><a href="pictures.html"><div class="menubutton">Pictures</div></a></td>\
 		</tr>\
 		<tr>\
